@@ -1,18 +1,13 @@
 import React, { useState } from 'react';
 import './ExerciseSideBar.css'
 
-
-
-const ExerciseSideBar = (props) => {    
-    let newPrice = 0;
-    let carts = props.cart
-    for(let cart of carts){
-        newPrice =  + newPrice + cart.price 
+const ExerciseSideBar = (props) => {  
+    let newTime = 0;
+    let exercises = props.exerciseItems
+    for(let exercise of exercises){
+        newTime =  + newTime + exercise.time 
     }
-    // cart.map(price =>  newPrice = parseInt(price.price)+newPrice )
-    // let totalPrice = 0;
-    // totalPrice = parseInt(props.cart.price) + totalPrice
-    // cart.filter(price => console.log(cart.price))
+
     const [time, setTime] = useState(0)
     function exerciseTime(timeValue){
         localStorage.setItem('exercise-time', timeValue )
@@ -28,7 +23,7 @@ const ExerciseSideBar = (props) => {
                 <li onClick={() =>exerciseTime(40)} >40</li>
                 <li onClick={() =>exerciseTime(60)} >60</li>
             </ul>
-            <h3>Total Exercise Time: {newPrice} Sec</h3>
+            <h3>Total Exercise Time: {newTime} Sec</h3>
             <h3>Break Time: { localStorage.getItem('exercise-time') } Sec</h3>
             <button className='complete-btn'>Completed</button>
         </div>

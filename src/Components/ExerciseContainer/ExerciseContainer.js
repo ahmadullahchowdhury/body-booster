@@ -40,7 +40,7 @@ const ExerciseContainer = () => {
             </div>
             <div>
 
-                <ExerciseSideBar cart={sideBarExercise}></ExerciseSideBar>
+                <ExerciseSideBar exerciseItems={sideBarExercise}></ExerciseSideBar>
             </div>
         </div>
         </div>
