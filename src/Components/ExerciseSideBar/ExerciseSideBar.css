@@ -1,0 +1,14 @@
+.list-inline > li {
+	display: inline-block;
+    padding: 15px;
+    border: 1px solid blue;
+    margin: 5px;
+    cursor: pointer;
+}
+.complete-btn{
+    background-color: burlywood;
+    border: none;
+    height: 50px;
+    width: 120px;
+    border-radius: 15px;
+}
