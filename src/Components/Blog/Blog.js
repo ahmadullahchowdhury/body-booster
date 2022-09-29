@@ -9,6 +9,8 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 
+
+//3 question answered with react external accordion package
 const Blog = () => {
   return (
     <div className="blog-container">

@@ -8,21 +8,20 @@ import './ExerciseContainer.css';
 
 
 const ExerciseContainer = () => {
+
     const [exercises , setExercise]  = useState([])
     const [sideBarExercise , setSideBarExercise]  = useState([])
 
+    //getting data from  data json file
     useEffect(() =>{
         fetch('exercise.json').then(res => res.json()).then(data => setExercise(data))
     },[])
 
 
-
+//button onclick function to be pass via props from parent components
     const handleClicked = (selectedExercise) =>{
         const updatedExercise = [...sideBarExercise , selectedExercise ]
         setSideBarExercise(updatedExercise)
-
-
-
     }
     return (
         <div className='container'>
@@ -43,7 +42,6 @@ const ExerciseContainer = () => {
                 }
             </div>
             <div>
-
                 <ExerciseSideBar exerciseItems={sideBarExercise}></ExerciseSideBar>
             </div>
         </div>

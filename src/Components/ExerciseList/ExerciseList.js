@@ -5,6 +5,7 @@ import './ExerciseList.css'
 
 
 const ExerciseList = (props) => {
+    //destructuring props
     let {name, time} = props.exercise
     return (
         <div className='exercises-container'>

@@ -10,13 +10,14 @@ const ExerciseSideBar = (props) => {
         newTime =  + newTime + exercise.time 
     }
 
+    //setting breaktime and adding localstorage
     const [time, setTime] = useState(0)
-    function exerciseTime(timeValue){
-        localStorage.setItem('exercise-time', timeValue )
-        setTime(localStorage.getItem('exercise-time'))
+    function breakTime(timeValue){
+        localStorage.setItem('break-time', timeValue )
+        setTime(localStorage.getItem('break-time'))
     }
-
-      const toastClick = () => toast.success("Owah, Congratulations", { autoClose: 3000 });
+    //toast function
+    const toastClick = () => toast.success("Owah, Congratulations", { autoClose: 3000 });
 
     return (
         <div className='SideBar'>
@@ -29,13 +30,13 @@ const ExerciseSideBar = (props) => {
             <h1>Exercise Summary</h1>
             <h3>Add Break Period</h3>
             <ul className='list-inline'>
-                <li onClick={() =>exerciseTime(20)} >20</li>
-                <li onClick={() =>exerciseTime(30)} >30</li>
-                <li onClick={() =>exerciseTime(40)} >40</li>
-                <li onClick={() =>exerciseTime(60)} >60</li>
+                <li onClick={() =>breakTime(20)} >20</li>
+                <li onClick={() =>breakTime(30)} >30</li>
+                <li onClick={() =>breakTime(40)} >40</li>
+                <li onClick={() =>breakTime(60)} >60</li>
             </ul>
             <h3>Total Exercise Time: {newTime} Sec</h3>
-            <h3>Break Time: { localStorage.getItem('exercise-time') } Sec</h3>
+            <h3>Break Time: { localStorage.getItem('break-time') } Sec</h3>
             <button  onClick={toastClick} className='complete-btn'>Completed</button>
             <ToastContainer autoClose={3000}  />
         </div>
