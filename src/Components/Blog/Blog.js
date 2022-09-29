@@ -23,9 +23,7 @@ const Blog = () => {
           </AccordionItemHeading>
           <AccordionItemPanel>
             <p>
-              Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat
-              occaecat ut occaecat consequat est minim minim esse tempor laborum
-              consequat esse adipisicing eu reprehenderit enim.
+            React is JavaScript library which is developed by Facebook. React is frontend library which is very fast. Behind the scene, React works bit differently because of this. When something changes in the DOM React doesn't render whole DOM againg. Rather it only, render the the changes only. How can they do it? They tracks the page with a virtual DOM and by diff algorithm they can track only the changes and apply it in the page by render(). 
             </p>
           </AccordionItemPanel>
         </AccordionItem>
@@ -37,9 +35,7 @@ const Blog = () => {
           </AccordionItemHeading>
           <AccordionItemPanel>
             <p>
-              Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat
-              occaecat ut occaecat consequat est minim minim esse tempor laborum
-              consequat esse adipisicing eu reprehenderit enim.
+            The main difference between Props and State is that Props data can be flowed from parent to child components where as State works only within the components. Props can be passed to child component state but the child component can't update it. Props are used to communicate between component where as States can be used for rendering dynamic changes with the component. 
             </p>
           </AccordionItemPanel>
         </AccordionItem>
@@ -51,9 +47,7 @@ const Blog = () => {
           </AccordionItemHeading>
           <AccordionItemPanel>
             <p>
-              In ad velit in ex nostrud dolore cupidatat consectetur ea in ut
-              nostrud velit in irure cillum tempor laboris sed adipisicing eu
-              esse duis nulla non.
+            useEffect is react hook. By which we can do many things. In the last milestone we mostly used useEffect to load data. But one case we also used it while state is being changed. After some research i found that useEffect can be used to track login data with live feedback. 
             </p>
           </AccordionItemPanel>
         </AccordionItem>

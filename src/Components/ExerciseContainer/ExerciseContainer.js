@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import ExerciseList from '../ExerciseList/ExerciseList';
 import ExerciseSideBar from '../ExerciseSideBar/ExerciseSideBar';
-import './ExerciseContainer.css'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDumbbell} from '@fortawesome/free-solid-svg-icons';
+import './ExerciseContainer.css';
 
 
 
@@ -24,8 +25,11 @@ const ExerciseContainer = () => {
 
     }
     return (
-        <div>
+        <div className='container'>
+            <div className='title'>
+            <FontAwesomeIcon icon={faDumbbell} size="2x"></FontAwesomeIcon>
             <h1 className='heading'>Body Booster</h1>
+            </div>
 
         <div className='exercise-all-container'>
         
