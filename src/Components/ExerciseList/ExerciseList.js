@@ -10,7 +10,7 @@ const ExerciseList = (props) => {
         <div className='exercises-container'>
             <img src={props.exercise.img} alt="" />
                 <p><strong>Name: {name}</strong></p>
-                <p><strong>Time: {time}</strong></p>
+                <p><strong>Time: {time} Sec</strong></p>
                 <button  className='add-to-side-bar-btn' onClick={() => props.handleClicked(props.exercise)}>
                 <p>Add to List</p>
                 </button>
