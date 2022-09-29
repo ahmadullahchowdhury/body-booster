@@ -14,14 +14,15 @@ img{
     width: 100%;
     position: absolute;
     bottom: 0;
-    left: 0;
+    /* left: 0; */
     background-color: burlywood;
     border: none;
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px 15px;
+    border-radius: 20px;
+    
 }
 p{
     padding-left: 10px;
