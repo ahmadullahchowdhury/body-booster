@@ -19,7 +19,7 @@ const ExerciseSideBar = (props) => {
       const toastClick = () => toast.success("Owah, Congratulations", { autoClose: 3000 });
 
     return (
-        <div>
+        <div className='SideBar'>
             <h1>Exercise Summary</h1>
             <h3>Add Break Period</h3>
             <ul className='list-inline'>

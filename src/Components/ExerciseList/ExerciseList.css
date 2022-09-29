@@ -27,6 +27,22 @@ p{
     padding-left: 10px;
 }
 
+
+@media only screen and (max-width: 667px) {
+    .exercises-container{
+        width: 300px;
+        height: 450px;
+        border: 3px solid orange;
+        position: relative;
+        border-radius: 20px;
+    }
+    
+    img{
+        width: 280px;
+        height: 280px;
+    }
+  }
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .exercises-container{
         width: 230px;

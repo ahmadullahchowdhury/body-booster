@@ -3,7 +3,7 @@
   grid-template-columns: 4fr 1fr;
   /* margin-left: 20px;
     margin-top: 40px; */
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
@@ -13,23 +13,26 @@
   gap: 30px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 667px) {
   .exercise-all-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     /* margin-left: 20px;
             margin-top: 40px; */
-    width: 80%;
-    margin: auto;
+    /* width: 100%; */
+   margin-left: 13px;
+    /* padding-left: 8px; */
   }
 
   .exercise-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
+    align-items: center;
+    justify-content: center;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 668px) and (max-width: 1023px) {
   .exercise-all-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
