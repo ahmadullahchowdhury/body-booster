@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './ExerciseSideBar.css'
 
 const ExerciseSideBar = (props) => {  
@@ -13,6 +15,9 @@ const ExerciseSideBar = (props) => {
         localStorage.setItem('exercise-time', timeValue )
         setTime(localStorage.getItem('exercise-time'))
     }
+
+      const toastClick = () => toast.success("Owah, Congratulations", { autoClose: 3000 });
+
     return (
         <div>
             <h1>Exercise Summary</h1>
@@ -25,7 +30,8 @@ const ExerciseSideBar = (props) => {
             </ul>
             <h3>Total Exercise Time: {newTime} Sec</h3>
             <h3>Break Time: { localStorage.getItem('exercise-time') } Sec</h3>
-            <button className='complete-btn'>Completed</button>
+            <button  onClick={toastClick} className='complete-btn'>Completed</button>
+            <ToastContainer autoClose={3000}  />
         </div>
     );
 };
