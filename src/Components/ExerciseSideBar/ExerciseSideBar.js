@@ -20,6 +20,12 @@ const ExerciseSideBar = (props) => {
 
     return (
         <div className='SideBar'>
+            <h2>Ahmadullah Chowdhury</h2>
+            <div className='info'>
+                <p>Weight: 50 kg</p>
+                <p>Age: 23 years</p>
+            </div>
+
             <h1>Exercise Summary</h1>
             <h3>Add Break Period</h3>
             <ul className='list-inline'>

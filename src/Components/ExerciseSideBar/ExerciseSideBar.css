@@ -12,7 +12,11 @@
     width: 120px;
     border-radius: 15px;
 }
-
+.info{
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+}
 @media only screen and (max-width: 667px) {
     .SideBar{
         width: 300px;
